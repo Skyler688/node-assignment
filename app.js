@@ -16,6 +16,7 @@ app.use(express.static("public"));
 app.set("layout", "./layouts/main");
 app.set("view engine", "ejs");
 
+
 app.use("/", require("./server/routes/main"));
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
